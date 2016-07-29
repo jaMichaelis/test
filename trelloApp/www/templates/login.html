@@ -1,0 +1,15 @@
+<ion-view title="Login" ng-controller="loginCtrl">
+  <ion-content padding="true" class="has-header">
+    <form id="login-form1" class="list ">
+      <ion-list id="login-list1">
+        <label class="item item-input ">
+          <span class="input-label">ApplicationKey:</span>
+          <input id="input" type="text" placeholder="Your key...">
+        </label>
+      </ion-list>
+      <a href="#/tabs/boards" ng-click="setAKey()" class=" button button-stable  button-block ">Authenticate</a>
+      <a ng-click="auth()" class=" button button-stable  button-block ">Authorize</a>
+      <a href="#" onclick="window.open('https://trello.com/app-key', '_system', 'location=yes'); return false;" id="login-button2" class=" button button-positive  button-block button-clear ">Don't have one? Click here</a>
+    </form>
+  </ion-content>
+</ion-view>

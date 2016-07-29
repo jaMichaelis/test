@@ -1,0 +1,7 @@
+<ion-view title="Boards" ng-controller="boardsCtrl as board">
+    <ion-content padding="true" class="has-header">
+        <a ng-repeat="board in boardInfos" ng-click="setBoardID(board.id)" href="#/tabs/lists"  style="font-weight:600;border-radius:10px 10px 10px 10px;" class=" button button-positive  button-block " >{{board.name}}</a>
+    </ion-content>
+</ion-view>
+
+
